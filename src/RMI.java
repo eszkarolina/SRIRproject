@@ -14,5 +14,6 @@ import java.rmi.RemoteException;
  */
 public interface RMI extends Remote {
     public String getData(String s) throws RemoteException;
+    public double avr(double d1, double d2) throws RemoteException;
     
 }

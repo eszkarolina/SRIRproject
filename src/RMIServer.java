@@ -20,8 +20,13 @@ public class RMIServer extends UnicastRemoteObject implements RMI{
         super();
     }
     public String getData(String s) throws RemoteException{
-        s = "Hi"+s;
+        s = "Hi "+s;
         return s;
+    }
+    
+    public double avr(double d1, double d2) throws RemoteException{
+        return (d1+d2)/2;
+        
     }
     
     public static void main(String args[]){
